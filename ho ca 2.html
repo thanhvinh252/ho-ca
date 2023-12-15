@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hồ Cá CSS3</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://wallpapercave.com/wp/wp2752640.png'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+
+        #background {
+            position: relative;
+            width: 100%;
+            height: 800px;
+        }
+
+        #shark {
+            position: absolute;
+            left: 100px;
+            top: 200px;
+            width: 498px;
+            height: 149px; 
+            animation: Shark 10s linear infinite;
+            transform: scaleX(1);
+        }
+
+        @keyframes Shark {
+            0% { left: 100px; top: 200px; }
+            25% { left: 500px; top: 200px; }
+            50% { left: 900px; top: 200px; transform: scaleX(-1); }
+            75% { left: 500px; top: 200px; transform: scaleX(1); }
+            100% { left: 100px; top: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="background">
+    <div id="shark"><img src="https://pngimg.com/uploads/shark/shark_PNG18819.png" width="298" height="149" alt="Shark Image"></div>
+</div>
+
+</body>
+</html>
